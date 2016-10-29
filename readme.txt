@@ -1,3 +1,10 @@
+How to run:
+1. nmp i
+2. npm i gulp-sass -D
+3. bower install bootstrap#v4.0.0-alpha.5
+4. gulp build
+5. gulp
+
 Installing Supplemental Files
 =============================
 
