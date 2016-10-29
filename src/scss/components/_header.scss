@@ -1,0 +1,29 @@
+$header-height: 50px !default;
+.m-header {
+	border-bottom: 1px solid  #e6e9ed;
+	&-contacts {
+		display: inline-block;
+		line-height: $header-height;
+		font-size: 12px;
+		// padding-left: 19px;
+		& + & {
+			margin-left: 25px;
+		}
+		&:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			width: 19px;
+			height: $header-height / 2; // !!
+			background-position: center;
+			background-repeat: no-repeat;
+			// background-color: red;
+		}
+		&--mail:before {
+			background-image: url(../images/mail-icon.png);
+		}
+		&--phone:before {
+			background-image: url(../images/phone-icon.png);
+		}
+	}
+}

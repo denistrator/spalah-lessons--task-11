@@ -109,4 +109,10 @@ $overlay-opacity: 0.6;
 	&-description {
 		text-align: $block-description-text-align;
 	}
+	&-gray-light-light {
+		background-color: $brand-gray-light-light;
+	}
+	&-gray-light-dark {
+		background-color: $brand-gray-light-dark;
+	}
 }

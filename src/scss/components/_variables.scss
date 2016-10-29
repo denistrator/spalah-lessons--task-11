@@ -4,6 +4,8 @@
 
 $brand-main:             #506a85;
 $brand-accent:           #17a78b;
+$brand-gray-light-light: #f5f7fa;
+$brand-gray-light-dark:  #f2f5f7;
 
 // Typography
 //
@@ -19,8 +21,8 @@ $heading-font-family: 'Lato', sans-serif;
 $heading-font-weight: 700;
 $heading-color: $brand-main;
 
-$link-color: $brand-accent;
-$link-color-hover: darken($brand-accent, 10%);
+$link-color: $brand-main;
+$link-color-hover: darken($brand-main, 10%);
 $link-decoration: none;
 $link-decoration-hover: none;
 
@@ -40,3 +42,8 @@ $btn-bg-hover: lighten($btn-bg, 10);
 
 $btn-border: 1px solid $btn-bg;
 $btn-border-color-hover: $btn-bg-hover;
+
+// Components
+//
+$header-height: 40px;
+$socials-height: $header-height;

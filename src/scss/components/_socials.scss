@@ -1,0 +1,61 @@
+$socials-height: 30px !default;
+
+.socials {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 0;
+	&-item {
+		font-size: 1rem;
+		display: inline-block;
+	}
+	&-link {
+		display: block;
+		width: 30px;
+		height: $socials-height;
+		line-height: $socials-height;
+		font-family: "Socialico";
+		font-size: 19px;
+		text-align: center;
+		color: inherit;
+		&:hover {
+			color: #fff;
+			background-color: #ccc;
+		}
+	}
+	.facebook-icon {
+		&:hover {
+			background-color: #4668b3;
+		}
+	}
+
+	.google-plus-icon {
+		&:hover {
+			background-color: #de5745;
+		}
+	}
+
+	.twitter-icon {
+		&:hover {
+			background-color: #2fbbed;
+		}
+	}
+
+	.pinterest-icon {
+		&:hover {
+			background-color: #d94348;
+		}
+	}
+
+	.behance-icon {
+		&:hover {
+			background-color: #3079ff;
+		}
+	}
+
+	.dribbble-icon {
+		&:hover {
+			background-color: #eb6397;
+		}
+	}
+}
