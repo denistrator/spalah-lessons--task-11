@@ -28,6 +28,7 @@ body {
 
 img {
 	max-width: 100%;
+	display: block;
 	height: auto;
 }
 
@@ -68,4 +69,15 @@ div[class *="img-holder"] {
 	&-center {
 		text-align: center;
 	}
+}
+
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+
+.por {
+	position: relative;
 }

@@ -1,11 +1,17 @@
 $header-height: 50px !default;
 .m-header {
-	border-bottom: 1px solid  #e6e9ed;
+	&-top {
+		border-bottom: 1px solid  #e6e9ed;
+	}
+	&-bottom {
+		display: table;
+		width: 100%;
+		padding: 31px 0;
+	}
 	&-contacts {
 		display: inline-block;
 		line-height: $header-height;
 		font-size: 12px;
-		// padding-left: 19px;
 		& + & {
 			margin-left: 25px;
 		}
@@ -17,13 +23,30 @@ $header-height: 50px !default;
 			height: $header-height / 2; // !!
 			background-position: center;
 			background-repeat: no-repeat;
-			// background-color: red;
 		}
-		&--mail:before {
-			background-image: url(../images/mail-icon.png);
+		&--mail {
+			&:before {
+				background-image: url(../images/mail-icon.png);
+			}
+			&:hover:before {
+				background-image: url(../images/mail-icon-active.png);
+			}
 		}
-		&--phone:before {
-			background-image: url(../images/phone-icon.png);
+		&--phone {
+			&:before {
+				background-image: url(../images/phone-icon.png);
+			}
+			&:hover:before {
+				background-image: url(../images/phone-icon-active.png);
+			}
 		}
+	}
+	&-logo {
+		display: table-cell;
+		vertical-align: middle;
+		width: 160px;
+	}
+	&-logo-img {
+		opacity: 0.6;
 	}
 }
