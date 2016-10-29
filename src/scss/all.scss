@@ -18,12 +18,12 @@
 @import "../../bower_components/bootstrap/scss/mixins/grid-framework";
 @import "../../bower_components/bootstrap/scss/mixins/grid";
 
-
 // Reset and dependencies
 @import "../../bower_components/bootstrap/scss/normalize";
 @import "../../bower_components/bootstrap/scss/print";
 
 // Core CSS
+@import "components/fonts";
 // @import "../../bower_components/bootstrap/scss/reboot";
 // @import "../../bower_components/bootstrap/scss/type";
 @import "components/type";
