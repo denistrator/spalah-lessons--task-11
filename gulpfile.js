@@ -1,9 +1,13 @@
+'use strict';
+
 var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var imagemin = require('gulp-imagemin'),
+    cache = require('gulp-cache');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 
@@ -17,6 +21,12 @@ gulp.task('browser-sync', function() {
 
 gulp.task('bs-reload', function () {
   browserSync.reload();
+});
+
+gulp.task('images', function(){
+  gulp.src('src/images/**/*')
+    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(gulp.dest('dist/images/'));
 });
 
 gulp.task('sass', function(){
