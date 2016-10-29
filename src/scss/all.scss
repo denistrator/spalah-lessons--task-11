@@ -10,6 +10,7 @@
 @import "../../bower_components/bootstrap/scss/variables";
 @import "components/variables";
 // @import "../../bower_components/bootstrap/scss/mixins";
+@import "components/mixins";
 //
 // Grid mixins
 //
@@ -18,11 +19,14 @@
 @import "../../bower_components/bootstrap/scss/mixins/grid-framework";
 @import "../../bower_components/bootstrap/scss/mixins/grid";
 
+@import "../../bower_components/bootstrap/scss/mixins/float";
+
 // Reset and dependencies
 @import "../../bower_components/bootstrap/scss/normalize";
 @import "../../bower_components/bootstrap/scss/print";
 
 // Core CSS
+@import "components/global";
 @import "components/fonts";
 // @import "../../bower_components/bootstrap/scss/reboot";
 // @import "../../bower_components/bootstrap/scss/type";
@@ -45,6 +49,7 @@
 @import "components/header";
 @import "components/socials";
 // @import "../../bower_components/bootstrap/scss/nav";
+@import "components/nav";
 // @import "../../bower_components/bootstrap/scss/navbar";
 // @import "../../bower_components/bootstrap/scss/card";
 // @import "../../bower_components/bootstrap/scss/breadcrumb";
@@ -68,4 +73,5 @@
 // Utility classes
 // @import "../../bower_components/bootstrap/scss/utilities";
 @import "../../bower_components/bootstrap/scss/utilities/clearfix";
+@import "../../bower_components/bootstrap/scss/utilities/float";
 @import "../../bower_components/bootstrap/scss/utilities/spacing";
