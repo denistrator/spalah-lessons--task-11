@@ -1058,3 +1058,47 @@ a {
     text-align: center; }
   .block-description {
     text-align: center; }
+
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  font-size: 15px;
+  background: #17a78b;
+  border: 1px solid #17a78b;
+  border-radius: 2px;
+  padding: 13px 25px;
+  margin: 15px; }
+  .btn:not(.prevent-tt) {
+    text-transform: uppercase; }
+  .btn:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    bottom: -1px;
+    border-radius: 2px;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15); }
+  .btn:hover {
+    color: #fff;
+    background: #1dd4b0;
+    border-color: #1dd4b0; }
+  .btn:focus {
+    outline: none; }
+  .btn-lg {
+    font-size: 18px;
+    padding: 17px 70px;
+    border-radius: 2px; }
+  .btn-sm {
+    font-size: 14px;
+    padding: 12px 17px;
+    border-radius: 2px; }

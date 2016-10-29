@@ -23,3 +23,20 @@ $link-color: $brand-accent;
 $link-color-hover: darken($brand-accent, 10%);
 $link-decoration: none;
 $link-decoration-hover: none;
+
+
+// Buttons
+//
+$btn-font-size: 15px;
+$btn-font-weight: 700;
+$btn-border-radius: 2px;
+$btn-padding: 13px 25px;
+
+$btn-color: #fff;
+$btn-color-hover:  $btn-color;
+
+$btn-bg: $brand-accent;
+$btn-bg-hover: lighten($btn-bg, 10);
+
+$btn-border: 1px solid $btn-bg;
+$btn-border-color-hover: $btn-bg-hover;
