@@ -1,0 +1,25 @@
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$brand-main:             #506a85;
+$brand-accent:           #17a78b;
+
+// Typography
+//
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$main-ff: 'Source Sans Pro', Arial, sans-serif;
+$line-height-base: 1.56;
+$body-color: $brand-main;
+$body-bg: #fff;
+$margin-bottom-p: 15px;
+
+$heading-font-family: 'Lato', sans-serif;
+$heading-font-weight: 700;
+$heading-color: $brand-main;
+
+$link-color: $brand-accent;
+$link-color-hover: darken($brand-accent, 10%);
+$link-decoration: none;
+$link-decoration-hover: none;

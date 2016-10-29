@@ -1,0 +1,71 @@
+$main-ff: 'Source Sans Pro', Arial, sans-serif !default;
+$line-height-base: 1.56 !default;
+$body-color: $brand-main !default;
+$body-bg: #fff !default;
+$margin-bottom-p: 15px !default;
+
+$heading-font-family: 'Lato', sans-serif !default;
+$heading-font-weight: 700 !default;
+$heading-color: $brand-main !default;
+
+$link-color: $brand-accent !default;
+$link-color-hover: darken($brand-accent, 10%) !default;
+$link-decoration: none !default;
+$link-decoration-hover: none !default;
+
+body {
+    color: $body-color;
+    background-color: $body-bg;
+    line-height: $line-height-base;
+    font-family: $main-ff;
+}
+
+ h1, h2, h3, h4, h5, h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-family: $heading-font-family;
+	font-weight: $heading-font-weight;
+	color: $heading-color;
+}
+
+h1, .h1 {
+	font-size: 78px;
+	font-weight: 900;
+}
+
+h2, .h2 {
+	font-size: 44px;
+}
+
+h3, .h3 {
+	font-size: 26px;
+}
+
+h4, .h4 {
+	font-size: 16px;
+}
+
+h5, .h5 {
+	font-size: 14px;
+}
+
+h6, .h6 {
+	font-size: 16px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: $margin-bottom-p;
+}
+
+a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    &:hover {
+        color: $link-color-hover;
+        text-decoration: $link-decoration-hover;
+    }
+}
+
+.lead {
+	font-size: 22px;
+}
