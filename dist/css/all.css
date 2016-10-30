@@ -1512,6 +1512,7 @@ a {
     display: block;
     position: relative;
     border: 1px solid transparent;
+    border-radius: 3px;
     padding: 16px 20px 14px;
     font-size: 15px;
     font-weight: 700; }
@@ -1533,21 +1534,60 @@ a {
     position: absolute;
     z-index: -99999;
     opacity: 0;
-    border: 1px solid #e6e9ed; }
+    border: 1px solid #e6e9ed;
+    border-radius: 3px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); }
     .m-nav-dropdown-full-with {
       right: 15px;
       left: 15px; }
     .m-nav-dropdown-link + * {
       margin-top: 25px; }
+    .m-nav-dropdown-text {
+      font-size: 14px; }
+  .m-nav-list {
+    list-style: none;
+    padding-left: 0; }
+    .m-nav-list-link:before {
+      content: '';
+      display: inline-block;
+      margin-right: 12px;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #17a78b;
+      border-radius: 50%; }
+  .m-nav-search-control {
+    padding: 12px 0;
+    position: absolute;
+    right: 0; }
+  .m-nav-search-form {
+    display: inline-block; }
   .m-nav-search-input {
-    width: 100px; }
+    width: 300px;
+    opacity: 0;
+    z-index: -99999; }
+    .m-nav-search-input.show {
+      opacity: 1;
+      z-index: 2; }
+  .m-nav-search-btn {
+    vertical-align: middle;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background: url("../images/icon-search.png") no-repeat center/contain;
+    cursor: pointer;
+    outline: none; }
 
-.m-nav-item:hover .has-dropdown {
-  background-color: #f5f7fa;
-  border-color: #e6e9ed;
-  border-bottom-color: #f5f7fa; }
-  .m-nav-item:hover .has-dropdown:after {
-    opacity: 1; }
+.m-nav-item:hover .m-nav-link {
+  color: #17a78b; }
+  .m-nav-item:hover .m-nav-link.has-dropdown {
+    background-color: #f5f7fa;
+    border-color: #e6e9ed;
+    border-bottom-color: #f5f7fa;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); }
+    .m-nav-item:hover .m-nav-link.has-dropdown:after {
+      opacity: 1; }
 
 .m-nav-item:hover .m-nav-dropdown {
   z-index: 1;
