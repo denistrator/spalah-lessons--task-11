@@ -4,8 +4,6 @@ $header-height: 50px !default;
 		border-bottom: 1px solid  #e6e9ed;
 	}
 	&-bottom {
-		display: table;
-		width: 100%;
 		padding: 31px 0;
 	}
 	&-contacts {
@@ -42,9 +40,10 @@ $header-height: 50px !default;
 		}
 	}
 	&-logo {
-		display: table-cell;
-		vertical-align: middle;
-		width: 160px;
+		display: block;
+		float: left;
+		padding-top: 5px;
+		margin-right: (89 / 1170 * 100%);
 	}
 	&-logo-img {
 		opacity: 0.6;
