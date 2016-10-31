@@ -1,10 +1,14 @@
 $header-height: 50px !default;
+.m-header-bottom-holder {
+	background-color: #fff;
+}
 .m-header {
 	&-top {
 		border-bottom: 1px solid  #e6e9ed;
 	}
 	&-bottom {
 		padding: 31px 0;
+		transition: all 0.4s;
 	}
 	&-contacts {
 		display: inline-block;
@@ -44,8 +48,30 @@ $header-height: 50px !default;
 		float: left;
 		padding-top: 5px;
 		margin-right: (89 / 1170 * 100%);
-	}
-	&-logo-img {
 		opacity: 0.6;
+
+		transition: all 0.3s;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+.is-sticky {
+	.m-header-bottom-holder {
+		box-shadow: inset 0 -1px 0 #e6e9ed, 0 10px 10px rgba(0, 0, 0, 0.1);
+	}
+	.m-header {
+		&-bottom {
+			padding: 0;
+		}
+		&-logo {
+			height: 20px;
+			margin-top: 14px;
+			margin-bottom: 14px;
+			box-sizing: content-box;
+			&-img {
+				height: 100%;
+			}
+		}
 	}
 }

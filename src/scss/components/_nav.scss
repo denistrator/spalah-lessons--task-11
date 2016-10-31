@@ -82,12 +82,14 @@
 			    text-transform: uppercase;
 			}
 			display: block;
-			padding: 12px 20px;
 			font-weight: 700;
 			font-size: 14px;
-			&:hover {
-				color: #fff;
-				background-color: $brand-accent;
+			&--vertical-list {
+				padding: 12px 20px;				
+				&:hover {
+					color: #fff;
+					background-color: $brand-accent;
+				}
 			}
 			& + * {
 				margin-top: 25px;
