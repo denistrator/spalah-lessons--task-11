@@ -3,6 +3,8 @@ $header-height: 50px !default;
 	background-color: #fff;
 }
 .m-header {
+	max-height: 90%;
+	max-height: 90vh;
 	&-top {
 		border-bottom: 1px solid  #e6e9ed;
 	}
@@ -45,14 +47,24 @@ $header-height: 50px !default;
 	}
 	&-logo {
 		display: block;
+		// width: 100%;
 		float: left;
 		padding-top: 5px;
-		margin-right: (89 / 1170 * 100%);
 		opacity: 0.6;
-
+		margin-right: 30px;
 		transition: all 0.3s;
 		&:hover {
 			opacity: 1;
+		}
+	}
+	@include media-breakpoint-up(lg){
+		&-logo {
+			// width: auto;
+		}
+	}
+	@include media-breakpoint-up(xl){
+		&-logo {
+			margin-right: (89 / 1170 * 100%);
 		}
 	}
 }
