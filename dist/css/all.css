@@ -1777,6 +1777,75 @@ a {
 .big-cards {
   margin-top: 6.83761%; }
 
+.card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 68.42105%; }
+  .card:hover .card-overlay {
+    opacity: 1; }
+    .card:hover .card-overlay:after {
+      opacity: 0.6; }
+  .card:hover + .card-footer .card-head {
+    color: #17a78b; }
+  .card-img-holder {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1; }
+    .card-overlay:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -1;
+      background-color: #17a78b; }
+  .card-holder {
+    display: table;
+    width: 100%;
+    height: 100%; }
+  .card-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+  .card-text {
+    color: #fff;
+    font-size: 25px; }
+    .card-text-lg {
+      font-size: 39px; }
+  .card-footer {
+    padding: 3.4188% 0 2.39316%;
+    text-align: center;
+    background-color: #fff; }
+  .card-head {
+    font-size: 20px; }
+  .card-decs {
+    font-size: 14px;
+    color: #73879c; }
+
+@media (max-width: 991px) {
+  .card {
+    margin: 30px 0 0; } }
+
+.card-group-polyfill {
+  margin-right: -3px;
+  margin-letf: -3px; }
+  .card-group-polyfill [class*="col"] {
+    padding: 3px; }
+
 .socials-holder {
   float: right; }
 
