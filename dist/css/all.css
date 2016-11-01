@@ -315,6 +315,9 @@ div[class*="img-holder"] {
 .text-center {
   text-align: center; }
 
+.text-uppercase {
+  text-transform: uppercase; }
+
 .pull-left {
   float: left; }
 
@@ -1440,8 +1443,8 @@ a {
     border-bottom: 1px solid  #e6e9ed; }
   .m-header-bottom {
     padding: 31px 0;
-    -webkit-transition: all 0.4s;
-            transition: all 0.4s; }
+    -webkit-transition: all 0.2s;
+            transition: all 0.2s; }
   .m-header-contacts {
     display: inline-block;
     line-height: 40px;
@@ -1722,6 +1725,20 @@ a {
 @media (min-width: 992px) {
   .m-nav-menu-toggler {
     display: none; } }
+
+.jumbotron {
+  background-color: #3b5570;
+  background-image: url("../images/jumbotron-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .jumbotron-desc {
+    color: #a3b1bf;
+    font-size: 24px;
+    line-height: 1.38; }
+  .jumbotron-btn {
+    margin-top: 5.38462%;
+    margin-bottom: 10px; }
 
 .socials-holder {
   float: right; }
