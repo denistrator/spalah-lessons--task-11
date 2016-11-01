@@ -72,7 +72,7 @@ $btn-border-color-hover: $btn-bg !default;
         outline: none;
     }
     &-lg {
-        @include btn-size(18px, 17px 70px, $btn-border-radius);
+        @include btn-size(18px, 17px (70 / 1170 * 100%), $btn-border-radius);
     }
     &-sm {
         @include btn-size(14px, 12px 17px, $btn-border-radius);

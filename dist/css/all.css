@@ -347,7 +347,8 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 78px;
-  font-weight: 900; }
+  font-weight: 900;
+  margin-bottom: 0.6em; }
 
 h2, .h2 {
   font-size: 44px; }
@@ -1382,13 +1383,26 @@ a {
       content: '';
       float: left; }
   .block-title {
+    margin-top: 0;
     text-align: center; }
-  .block-description {
+  .block-desc {
     text-align: center; }
   .block-gray-light-light {
     background-color: #f5f7fa; }
   .block-gray-light-dark {
     background-color: #f2f5f7; }
+
+.pt-md {
+  padding-top: 11.11111%; }
+
+.pt-sm {
+  padding-top: 6.41026%; }
+
+.pb-md {
+  padding-bottom: 11.11111%; }
+
+.pb-sm {
+  padding-bottom: 6.41026%; }
 
 .btn {
   position: relative;
@@ -1426,7 +1440,7 @@ a {
     outline: none; }
   .btn-lg {
     font-size: 18px;
-    padding: 17px 70px;
+    padding: 17px 5.98291%;
     border-radius: 2px; }
   .btn-sm {
     font-size: 14px;
@@ -1739,6 +1753,29 @@ a {
   .jumbotron-btn {
     margin-top: 5.38462%;
     margin-bottom: 10px; }
+
+.features {
+  margin-top: 6.83761%; }
+  .features-control {
+    font-size: 0; }
+    .features-control > * {
+      font-size: initial; }
+  .features-img-holder {
+    margin-top: 6px;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%; }
+  .features-img {
+    padding-right: 20%; }
+  .features-text-control {
+    display: inline-block;
+    width: 75%; }
+  .features-head {
+    margin-top: 0;
+    margin-bottom: 20px; }
+
+.big-cards {
+  margin-top: 6.83761%; }
 
 .socials-holder {
   float: right; }

@@ -104,9 +104,10 @@ $overlay-opacity: 0.6;
 		}
 	}
 	&-title {
+		margin-top: 0;
 		text-align: $block-title-text-align;
 	}
-	&-description {
+	&-desc {
 		text-align: $block-description-text-align;
 	}
 	&-gray-light-light {
@@ -114,5 +115,24 @@ $overlay-opacity: 0.6;
 	}
 	&-gray-light-dark {
 		background-color: $brand-gray-light-dark;
+	}
+}
+
+.p {
+	&t {
+		&-md {
+			padding-top: (130 / 1170 * 100%);
+		}
+		&-sm {
+			padding-top: (75 / 1170 * 100%);
+		}
+	}
+	&b {
+		&-md {
+			padding-bottom: (130 / 1170 * 100%);
+		}
+		&-sm {
+			padding-bottom: (75 / 1170 * 100%);
+		}
 	}
 }

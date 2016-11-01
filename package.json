@@ -1,7 +1,7 @@
 {
-  "name": "Quench",
-  "version": "1.0.0",
-  "description": "A Gulp file and project generator.",
+  "name": "Reen",
+  "version": "0.1.0",
+  "description": "Markup of Reen",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
