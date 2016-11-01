@@ -1,0 +1,27 @@
+.features {
+	margin-top: (80 / 1170 * 100%);
+	&-control {
+		font-size: 0;
+		& > * {
+			font-size: initial;
+		}
+	}
+	&-img-holder {
+		margin-top: 6px; // !
+		display: inline-block;
+		vertical-align: top;
+		width: 25%;
+	}
+	&-img {
+		// width: 85%;
+		padding-right: 20%;
+	}
+	&-text-control {
+		display: inline-block;
+		width: 75%;
+	}
+	&-head {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}
