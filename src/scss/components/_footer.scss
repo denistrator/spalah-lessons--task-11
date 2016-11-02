@@ -1,0 +1,98 @@
+.m-footer {
+    &-head {
+        margin-top: 0;
+    }
+    &-logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+    &-about-link {
+        color: lighten($brand-accent, 8%);
+        font-size: 15px;
+        font-weight: 700;
+        &:after {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 11px;
+            width: 10px;
+            height: 8px;
+            background: url('../images/icon-right-arrow.png') no-repeat center / contain;
+        }
+    }
+    &-text {
+        color: $brand-text-light;
+    }
+    &-contact-item {
+    	font-style: normal;
+    	&:before {
+    		content: '';
+    		display: inline-block;
+            vertical-align: middle;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+    	}
+    	&--arddess {
+    		&:before {
+    			width: 7px;
+    			height: 12px;
+    			margin-right: 13px;
+    			background-image: url('../images/icon-location.png');
+    		}
+    		&:hover {
+    			color: $brand-accent;
+    			&:before {
+    				background-image: url('../images/icon-location-active.png');
+    			}	
+    		}
+    	}
+    	&--phone {
+    		&:before {
+    			width: 7px;
+    			height: 12px;
+    			margin-right: 13px;
+    			background-image: url('../images/phone-icon.png');
+    		}
+    		&:hover {
+    			color: $brand-accent;
+    			&:before {
+    				background-image: url('../images/phone-icon-active.png');
+    			}	
+    		}
+    	}
+    	&--email {
+    		&:before {
+    			width: 11px;
+    			height: 9px;
+    			margin-right: 9px;
+    			background-image: url('../images/mail-icon.png');
+    		}
+    		&:hover {
+    			color: $brand-accent;
+    			&:before {
+    				background-image: url('../images/mail-icon-active.png');
+    			}	
+    		}
+    	}	
+    }
+    &-form {
+		position: relative;
+		width: 100%;
+    }
+    &-input {
+    	border-color: transparent;
+    	border-radius: 2px;
+    	color: #fff;
+		background-color: #586674;
+		padding: 8px;
+		padding-right: 100px;
+		width: 100%;
+    }
+    &-form-btn {
+    	position: absolute;
+    	top: 5px;
+    	right: 5px;
+		padding: 4px;
+    }
+}
