@@ -4,13 +4,13 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-.m-nav-items, .m-nav-dropdown {
+.m-nav-items, .m-nav-dropdown, .m-footer-nav-items {
   margin: 0;
   padding: 0;
   font-size: 0;
   list-style: none; }
 
-.m-nav-items li, .m-nav-dropdown li {
+.m-nav-items li, .m-nav-dropdown li, .m-footer-nav-items li {
   font-size: initial; }
 
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
@@ -1929,6 +1929,36 @@ a {
   top: 5px;
   right: 5px;
   padding: 4px; }
+
+.m-footer-bottom {
+  padding: 30px 0; }
+
+.m-footer-copy {
+  font-size: 14px;
+  float: left;
+  margin: 0;
+  color: #707e8c; }
+
+.m-footer-nav {
+  float: right; }
+  .m-footer-nav-item {
+    display: inline-block; }
+    .m-footer-nav-item + .m-footer-nav-item .m-footer-nav-link {
+      margin-left: 12px; }
+      .m-footer-nav-item + .m-footer-nav-item .m-footer-nav-link:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 12px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: currentColor; }
+  .m-footer-nav-link {
+    color: #707e8c;
+    font-size: 14px; }
+    .m-footer-nav-link.active {
+      color: #17a78b; }
 
 .socials-holder {
   float: right; }

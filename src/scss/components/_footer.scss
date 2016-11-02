@@ -95,4 +95,42 @@
     	right: 5px;
 		padding: 4px;
     }
+    &-bottom {
+    	padding: 30px 0;
+    }
+    &-copy {
+    	font-size: 14px;
+    	float: left;
+    	margin: 0;
+    	color: #707e8c;
+    }
+    &-nav {
+    	float: right;
+    	&-items {
+    		@extend %reset-list-styles;
+    	}
+    	&-item {
+    		display: inline-block;
+    		& + & .m-footer-nav-link{
+    			margin-left: 12px;
+    			&:before {
+    				content: '';
+    				display: inline-block;
+    				vertical-align: middle;
+    				margin-right: 12px;
+    				width: 3px;
+    				height: 3px;
+    				border-radius: 50%;
+    				background-color: currentColor;
+    			}
+    		}
+    	}
+    	&-link {
+    		color: #707e8c;
+    		font-size: 14px;
+			&.active {
+				color: $brand-accent;
+			}
+    	}
+    }
 }
