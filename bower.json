@@ -1,0 +1,20 @@
+{
+  "name": "Reen",
+  "description": "Markup of Reen",
+  "main": "gulpfile.js",
+  "authors": [
+    "Quench"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/denistrator/spalah-lessons--task-11",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.5"
+  }
+}
